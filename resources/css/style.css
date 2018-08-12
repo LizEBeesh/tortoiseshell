@@ -11,9 +11,6 @@ html {
   margin: auto;
 }
 
-
-
-
 .hero {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
   height: 30rem;
@@ -46,7 +43,6 @@ html {
 }
 
 nav li {
-  display: flex;
   display: inline;
   color: white;
   padding: 1rem 2rem;
@@ -66,17 +62,82 @@ nav li {
   margin-top: 10rem;
 }
 
-.service {
-  display: inline;
+.services {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem 6rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  align-items: center;
   max-height: 8rem;
 }
 
 .service img {
 max-width: 3.5rem;
-}
-.service span {
 
+}
+
+.service span {
+display: inline-block;
+max-width: 4rem;
+text-align: center;
+justify-content: center;
+}
+
+.business-info{
+  display: flex;
+  justify-content: center;
+
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.title {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  max-width: 35%;
+}
+
+.title p {
+  margin: 5rem;
+  display: block;
+  padding: 1rem 0;
+}
+
+.footer {
+  background-color: azure;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.footer img{
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .logo-area {
+    padding: 0;
+
+  }
 }
